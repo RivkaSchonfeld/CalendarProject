@@ -1,0 +1,709 @@
+.hide {
+    display: none;
+}
+
+.show {
+    display: flex;
+}
+
+
+body {
+    background-color: rgb(121, 119, 116);
+    /* overflow: hidden; */
+}
+
+
+header,
+footer {
+    text-align: center;
+    padding: 0.5rem;
+    color: rgba(20, 20, 19, 0.52);
+}
+
+
+
+/* login page */
+
+#loginDiv {
+    height: 80vh;
+    margin: 0px;
+    /* display: flex; */
+    /* this i wrote to show the page */
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    background-color: rgba(229, 211, 188, 95%);
+    box-shadow: 0px 0px 10rem rgb(229, 211, 188);
+    border-radius: 3px;
+    z-index: 1;
+    position: relative;
+
+}
+
+#loginDiv form {
+    background-color: rgba(122, 119, 119, 60%);
+    padding: 3.5rem;
+    border-radius: 100%;
+    height: 60vh;
+    width: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    box-shadow: 10px -10px 2rem black;
+    z-index: 3;
+
+}
+
+#loginDiv form label {
+    margin-top: 12%;
+    /* text-align: left; */
+    font-family: sans-serif;
+}
+
+#loginDiv form input {
+    width: 70%;
+}
+
+#loginDiv h3 {
+    color: rgba(122, 119, 119, 40%);
+    z-index: 2;
+    /* rgba(84, 86, 89, 0.18); */
+    position: absolute;
+    /* top:-40%; */
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 19rem;
+    text-shadow: 0px 0px 46rem rgb(98, 98, 239);
+    transform: rotate3d(122, 100, 42, 45deg);
+}
+
+#loginDiv form button {
+    margin-top: 30%;
+    height: 2rem;
+    width: 30%;
+    /* align-self: center; */
+}
+
+#loginDiv form p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* end of login page */
+
+
+
+/* registry page */
+
+#registryDiv {
+    background-color: rgba(255, 255, 255, 80%);
+    height: 80vh;
+    width: 50%;
+    margin: auto;
+    /* display: flex;   this i wrote to show the page */
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10rem rgb(229, 225, 188);
+    border-radius: 13px;
+    /* this is for the other two corners*/
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    /* border-radius: 100%; */
+    /* this will make the sculpture a circle*/
+
+}
+
+#registryDiv form {
+    padding: 3rem;
+    border-radius: 13px;
+    height: 20%;
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+    box-shadow: 10px -10px 22rem rgba(43, 177, 201, 0.765);
+    background-color: rgba(128, 128, 128, 0.6);
+}
+
+#registryDiv form div {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    width: 15%;
+    height: 70%;
+    /* box-shadow: 0px 0px 10rem black; */
+}
+
+#registryDiv form input {
+    height: 2rem;
+    width: 90%;
+}
+
+#registryDiv form label {
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+
+/* end of registry page */
+
+
+
+
+
+/* choosing page */
+
+#choosingPage {
+    /* background-color:rgba(126, 126, 186,100%) ; */
+    flex-direction: column;
+    height: 80vh;
+    align-items: center;
+    gap: 0rem;
+    position: relative;
+    box-shadow: 0px 0px 44rem rgb(90, 209, 209);
+    border-radius: 5rem;
+
+}
+
+
+
+#choosingPage h2 {
+    font-size: 4rem;
+    margin-top: 5rem;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* color: */
+    text-shadow: 0px 0px 6rem rgb(224, 220, 17);
+
+}
+
+#buttonsInCoosing {
+    display: flex;
+    gap: 4rem;
+}
+
+#buttonsInCoosing button {
+    /* background-color:rgb(55, 52, 52); */
+    border-radius: 2rem;
+    height: 5rem;
+    width: 17rem;
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    z-index: 4;
+}
+
+#buttonsInCoosing button:hover {
+    box-shadow: 0px 0px 14rem rgb(6, 6, 6);
+
+}
+
+#choosingPage span {
+    background-color: beige;
+    border-top-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    height: 7rem;
+    width: 7rem;
+    position: fixed;
+}
+
+#s1 {
+    bottom: 7rem;
+    left: 0rem;
+    transform: rotate3d(604, -241, 141, 180deg);
+
+    animation-name: moveSpan1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes moveSpan1 {
+    0% {
+        transform: rotate3d(604, -212, 141, 180deg);
+    }
+
+    10% {
+        transform: rotate3d(604, -270, 141, 180deg);
+    }
+
+    30% {
+        transform: rotate3d(604, -212, 141, 180deg);
+    }
+
+    40% {
+        transform: rotate3d(604, -270, 141, 180deg);
+    }
+
+    60% {
+        transform: rotate3d(604, -212, 141, 180deg);
+    }
+
+    70% {
+        transform: rotate3d(604, -270, 141, 180deg);
+    }
+
+    80% {
+        transform: rotate3d(604, -212, 141, 180deg);
+    }
+
+    90% {
+        transform: rotate3d(604, -270, 141, 180deg);
+    }
+}
+
+#s2 {
+    bottom: 2rem;
+    left: 6rem;
+    transform: rotateZ(-49deg);
+
+
+    animation-name: moveSpan2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes moveSpan2 {
+    0% {
+        transform: rotateZ(-40deg);
+    }
+
+    10% {
+        transform: rotateZ(-49deg);
+    }
+
+    30% {
+        transform: rotateZ(-40deg);
+    }
+
+    40% {
+        transform: rotateZ(-49deg);
+    }
+
+    60% {
+        transform: rotateZ(-40deg);
+    }
+
+    70% {
+        transform: rotateZ(-49deg);
+    }
+
+    80% {
+        transform: rotateZ(-40deg);
+    }
+
+    90% {
+        transform: rotateZ(-49deg);
+    }
+}
+
+
+
+#divImg1,
+#divImg2 {
+    height: 40%;
+    width: 40%;
+    position: relative;
+}
+
+#whCal {
+    height: 20rem;
+    width: 20rem;
+    position: absolute;
+    top: -90px;
+    left: -128px;
+    transform: rotatey(-179deg);
+    z-index: -1;
+}
+
+#whCal img {
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+#paper {
+    height: 10rem;
+    width: 10rem;
+    position: absolute;
+    top: -40px;
+    right: -60px;
+    z-index: -1;
+
+}
+
+#paper img {
+    height: 14rem;
+    width: 14rem;
+    border-radius: 90%;
+}
+
+/* end of choosing page */
+
+
+
+/* calendar page */
+
+
+
+#myCalendar {
+    height: 80vh;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    background-color: rgba(214, 142, 222, 0.053);
+    box-shadow: 0px 0px 64rem rgb(246, 250, 250);
+    position: relative;
+
+}
+
+#myCalendar>button {
+    align-self: center;
+    font-size: 3.5rem;
+    background-color: unset;
+    border: none;
+    position: absolute;
+    top: 0rem;
+    left: 0.5rem;
+}
+
+#myCalendar button:hover {
+    box-shadow: 0px 0px 1rem black;
+}
+
+#bottomOfCalendar {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 12rem;
+    align-items: center;
+}
+
+#calendarForImage {
+    background-image: url('images/calendar.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0.2rem;
+    height: 35rem;
+    width: 35rem;
+    margin-left: 5rem;
+}
+
+#bottomLeftCalendar {
+    /* font-size: 1.5rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50%;
+    width: 40%;
+    /* margin: auto; */
+    margin-left: 33%;
+    /* margin-top:1.5rem; */
+    align-items: center;
+    padding-top: 9rem;
+}
+
+#dateThatIsOpened {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+    margin-bottom: -0.3rem;
+}
+
+#reminders {
+    font-size: 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+
+
+}
+
+#addAReminder {
+    font-size: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    gap:0.08rem;
+}
+#addAReminder input{
+    width:4.2rem;
+}
+
+#bottomRightCalendar {
+    /*  the monthly view*/
+    /* background-image: url('images/calendar.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 40rem;
+    width: 40rem; */
+
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border-radius: 2rem;
+    padding: 2rem;
+    justify-content: center;
+    margin-left: -64px;
+    margin-top: -3rem;
+
+
+
+}
+#rc{
+    display:flex;
+    flex-direction: column;
+}
+#divFindDate{
+    font-size: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    gap:0.08rem;
+    height: 1.6rem;
+}
+
+.spans {
+    font-size: 1.7rem;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 1rem;
+    background-color: rgba(93, 196, 214, 0.429);
+}
+
+.spans:hover {
+    box-shadow: 0px 0px 1rem rgb(4, 53, 62);
+}
+
+
+
+.spanDivs {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    flex-wrap: nowrap;
+
+}
+
+
+
+
+
+
+/*   <div id="myCalendar" class="hide">
+
+            <div id="divFindDate"> <!-- to go to a different date -->
+                <label for="">Go To Date:</label>
+                <input id="goToDate" type="date" />
+                <button onclick="goToDate()">Enter</button>
+            </div>
+
+
+            <div id="bottomOfCalendar">
+
+                <div id="bottomLeftCalendar">
+
+                    <h4 id="dateThatIsOpened">Date:________ </h4> <!--shows me what date is open   -->
+
+                    <div id="reminders"> <!-- list of reminders for this specific day -->
+                        <ul id="ulInReminders">
+                            <li>dentist at 4</li>
+                            <li>piano at 5 o'clock</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <label for="">Add A Reminder</label> <!--to add another reminder -->
+                        <input id="addReminder" type="text" />
+                        <button onclick="addAReminder()">+</button>
+                    </div>
+
+                </div>
+
+
+
+                <div id="bottomRightCalendar"> <!-- monthly view of the days -->
+
+                </div>
+
+
+            </div>
+
+            <button onclick="showChoosingPage()">Back</button> <!-- to go back and choose a different view -->
+
+
+        </div> <!-- the calendar's page's div closes  -->
+ */
+
+
+
+
+
+
+
+/* end of calendar page */
+
+
+
+/* task page */
+
+
+#taskPage {
+    background-image: url('images/woodenBackground.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    box-shadow: 0px 0px 48rem rgb(164, 116, 73);
+    border-radius: 2rem;
+    margin-top: -2rem;
+    position: relative;
+    justify-content: space-around;
+}
+
+#taskPage>button {
+    align-self: center;
+    font-size: 3.5rem;
+    background-color: unset;
+    border: none;
+    position: absolute;
+    top: 0rem;
+    left: 0.5rem;
+}
+
+#taskPage>button:hover {
+
+    color: rgb(85, 81, 81);
+}
+
+/* wood colors : rgb(164,116,73); rgb(186,140,99); */
+
+#leftOfTask {
+    background-image: url('images/TaskPad.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 95%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+#tasksLeft2 {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 40%;
+    width: 40%;
+    margin: 9rem;
+    align-items: center;
+    padding-left: 2rem;
+    padding-top: 3.5rem;
+}
+
+#taskList {
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+
+#addTask {
+    font-size: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#addTask input {
+    width: 4.5rem;
+}
+
+
+
+#rightOfTasks {
+    width: 40%;
+    height: 90%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#wordingAnimation {
+    width: 70%;
+}
+
+#wordingAnimation::before {
+    content: "Be happy- you are the daughter of The Master of the world!!";
+    font-family: monospace;
+    font-size: 3rem;
+    color: rgb(164, 111, 65);
+    text-shadow: 0px 0px 1rem rgb(249, 249, 246);
+    /* rgb(186,140,99);  */
+    /* here you have to do animation */
+    animation-name: animationText;
+    animation-duration: 35s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes animationText {
+    0% {
+        content: "If not you - then who? (Pirkei Avos).";
+        /* color: rgb(60, 60, 227) */
+    }
+
+    10% {
+        content: "Dont dream your life - live your dreams.";
+        /* color: rgb(6, 6, 119); */
+
+    }
+
+    20% {
+        content: "The present is the biggest present - dont let it slip away.";
+        /* color: rgb(52, 113, 163); */
+
+    }
+
+    30% {
+        content: "The darkest time is right before the sunrise.";
+        /* color: rgb(8, 93, 16); */
+
+    }
+
+    40% {
+        content: "No one can drive you crazy unless you give them the key.";
+        /* color: rgb(8, 205, 136); */
+
+    }
+
+    50% {
+        content: "When life throws you lemons - make lemonade.";
+        /* color: rgb(169, 209, 38); */
+
+    }
+
+    60% {
+        content: "The strongest light is a small light in the darkness.";
+        /* color: rgb(238, 238, 30); */
+
+    }
+
+    70% {
+        content: "Who is the rich? One who is happy with his lot (Pirkei Avos).";
+        /* color: rgb(222, 147, 27); */
+    }
+
+    80% {
+        content: "A journey of a thousand miles starts with one step.";
+        /* color: rgb(189, 65, 43); */
+    }
+
+    90% {
+        content: "The city of happiness is in your state of mind.";
+        /* color: rgb(219, 38, 180); */
+    }
+}
+
+
+
+/* end of task page */

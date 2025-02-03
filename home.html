@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+
+
+<body id="body" onload="showLoginPage()">
+    <!-- this goes back to the body-->
+    <header>
+        <h1>Book Your Schedule</h1>
+    </header>
+
+
+    <main id="main">
+
+        <!--this is the login page -->
+
+        <div id="loginDiv" class="hide">
+            <h3>Welcome</h3>
+            <!-- <div id="#imageLogin1"><img src="images/Screenshot 2024-05-07 222313.png" alt=""></div> -->
+            <form action="" onsubmit="loginButton(event)">
+                <label>Full Name</label>
+                <input name="name" type="text" />
+
+                <label>Password</label>
+                <input name="password" type="password" />
+
+                <button>Login</button>
+
+                <p>Don't Have An account?<a href="" onclick="showRegisterPage(event)">Register Now!</a></p>
+            </form>
+
+        </div>
+
+
+        <!-- Registry page -->
+
+        <div id="registryDiv" class="hide">
+            <h3 style="color: rgb(71, 71, 71); font-family:Verdana, Geneva, Tahoma, sans-serif;">Perfect place to make
+                an account!!!</h3>
+
+            <form action="" onsubmit="registry(event)">
+                <div>
+                    <label for="">Enter Full Name</label>
+                    <input name="name" type="text" />
+                </div>
+
+                <div>
+                    <label for="">Enter Phone Number</label>
+                    <input name="phone" type="tel" />
+                </div>
+
+                <div>
+                    <label for="">Enter Email Address</label>
+                    <input name="email" type="email" />
+                </div>
+
+                <div>
+                    <label for="">Enter City</label>
+                    <input name="city" type="text" />
+                </div>
+
+                <div>
+                    <label for="">Enter Password</label>
+                    <input name="password1" type="password" />
+                </div>
+
+                <div>
+                    <label for="">Verify You Password</label>
+                    <input name="passwordVerification" type="password" />
+                </div>
+
+                <button>Submit</button>
+            </form>
+
+        </div>
+
+
+        <!-- choosing what to open -->
+        <div id="choosingPage" class="hide">
+            <h2>What Would You Like To Open?</h2>
+            <div id="buttonsInCoosing">
+                <div id="divImg1"> <button onclick="calendarButton()">My Calendar</button>
+                    <div id="whCal"><img src="images/whiteCalendar.png" alt=""></div>
+                </div>
+                <div id="divImg2"> <button onclick="renderTasks()">My Tasks</button>
+                    <div id="paper"><img src="images/tasksWithPencil.jpg" alt=""></div>
+                </div>
+            </div>
+            <span id="s1"></span>
+            <span id="s2"></span>
+
+
+        </div>
+
+
+        <!-- Calendar Page -->
+
+        <div id="myCalendar" class="hide">
+
+            <div id="bottomOfCalendar">
+
+                <div id="calendarForImage">
+
+                    <div id="bottomLeftCalendar">
+
+                        <h4 id="dateThatIsOpened">Date:________ </h4> <!--shows me what date is open   -->
+
+                        <div id="reminders"> <!-- list of reminders for this specific day -->
+                            <ul id="ulInReminders">
+                                <li>dentist at 4</li>
+                                <li>piano at 5 o'clock</li>
+                            </ul>
+                        </div>
+
+                        <div id="addAReminder">
+                            <label for="">Add A Reminder</label> <!--to add another reminder -->
+                            <input id="addReminder" type="text" />
+                            <button onclick="addAReminder()">+</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="rc">
+
+                    <div id="bottomRightCalendar"> <!-- monthly view of the days -->
+
+                    </div>
+
+                    <div id="divFindDate"> <!-- to go to a different date -->
+                        <label for="">Go To Date:</label>
+                        <input id="goToDate" type="date" />
+                        <button onclick="goToDate()">Enter</button>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+
+
+            <button onclick="showChoosingPage()">
+                < </button> <!-- to go back and choose a different view -->
+
+
+        </div> <!-- the calendar's page's div closes  -->
+
+
+
+
+        <div id="taskPage" class="hide"> <!-- task page -->
+
+
+            <div id="leftOfTask">
+                <div id="tasksLeft2">
+                    <div id="taskList">
+
+                        <ul id="listOfTasks"> <!-- task list-->
+                            <li>clean the garage</li>
+                            <li>check tests</li>
+                            <li>pay water</li>
+                        </ul>
+                    </div>
+
+                    <div id="addTask">
+                        <label for="">Add A Task</label> <!-- to add a task -->
+                        <input id="addATask" type="text" />
+                        <button onclick="addATask()">+</button>
+                    </div>
+                </div>
+
+            </div>
+            <button onclick="showChoosingPage()">
+                < </button>
+
+
+                    <div id="rightOfTasks">
+                        <p id="wordingAnimation"></p>
+                    </div>
+
+        </div>
+
+    </main>
+
+    <footer>&copy;All Rights Reserved 058-329-4142</footer>
+
+    <script src="home.js"></script>
+</body>
+
+</html>
